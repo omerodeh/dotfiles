@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/kareem/.config/mutt/accounts/Mercer'
+let g:netrw_dirhist_2='/home/kareem/.config/mutt/accounts/Personal'
+let g:netrw_dirhist_3='/home/kareem/.offlineimap'
+let g:netrw_dirhist_4='/home/kareem/.mail'
+let g:netrw_dirhist_5='/home/kareem/.config/mutt/etc'
+let g:netrw_dirhist_6='/home/kareem/.config/mutt'

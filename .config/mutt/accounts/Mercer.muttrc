@@ -1,0 +1,35 @@
+# vim: filetype=neomuttrc
+# muttrc file for account Mercer
+set realname = "Kareem Odeh"
+set from = "abdulkareem.odeh@students.mccc.edu"
+set smtp_url = "smtp://abdulkareem.odeh@students.mccc.edu@smtp-mail.outlook.com:587/"
+set sendmail = "/usr/bin/msmtp -a Mercer"
+
+set imap_user = "abdulkareem.odeh@students.mccc.edu"
+#set folder = "~/.mail/Mercer"
+set folder = "imaps://imap-mail.outlook.com:993"
+set header_cache = ~/.config/mutt/accounts/Mercer/cache/headers
+set message_cachedir = ~/.config/mutt/accounts/Mercer/cache/bodies
+set certificate_file = ~/.config/mutt/accounts/Mercer/certificates
+source "~/.config/mutt/credentials/getmuttpass Mercer |"
+
+set mbox_type = Maildir
+set ssl_starttls = yes
+set ssl_force_tls = yes
+
+bind index,pager g noop
+bind index gg first-entry
+mailboxes =INBOX ="Sent Items" =Drafts =Archive =Trash ="Junk Email"  
+macro index,pager gi "<change-folder>=INBOX<enter>" "Go to inbox."
+macro index,pager gs "<change-folder>=Sent Items<enter>" "Go to sent."
+macro index,pager gd "<change-folder>=Drafts<enter>" "Go to drafts."
+macro index,pager gt "<change-folder>=Trash<enter>" "Go to trash."
+macro index,pager ga "<change-folder>=Archive<enter>" "Go to archive."
+macro index,pager gj "<change-folder>=Junk Email<enter>" "Go to junk."
+
+set spoolfile = "+INBOX"
+set record = "+Sent Items"
+set postponed = "+Drafts"
+set trash = "+Trash"
+
+account-hook abdulkareem.odeh@students.mccc.edu "set imap_user=abdulkareem.odeh@students.mccc.edu"

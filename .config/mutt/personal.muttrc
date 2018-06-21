@@ -1,0 +1,4 @@
+macro index,pager i1 '<sync-mailbox><enter-command>source /home/kareem/.config/mutt/accounts/Personal.muttrc<enter><change-folder>!<enter>'
+source /home/kareem/.config/mutt/accounts/Personal.muttrc
+macro index,pager i2 '<sync-mailbox><enter-command>source /home/kareem/.config/mutt/accounts/Mercer.muttrc<enter><change-folder>!<enter>'
+macro index,pager i3 '<sync-mailbox><enter-command>source /home/kareem/.config/mutt/accounts/Mercer.muttrc<enter><change-folder>!<enter>'
